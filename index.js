@@ -9,8 +9,9 @@ var app = express();
 
 
 // This responds with "Hello World" on the homepage
-app.get('/', function (req, res) {
+app.get('/', function (req, res, next) {
    console.log("Got a GET request for the homepage");
+   
    var data = [
    {"name":"James Bond1111"}
    ];
